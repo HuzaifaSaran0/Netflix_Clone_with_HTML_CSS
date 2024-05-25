@@ -1,0 +1,733 @@
+html, body {
+    overflow-x: hidden; /* Prevent horizontal scroll */
+}
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.main {
+    background-image: url("NetflixMainImage.jpg");
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 110.5vh;
+    position: relative;
+}
+
+.main .box {
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0.44;
+    top: 0;
+    background-color: black;
+    position: absolute;
+}
+
+/* NAVBAR STARTED */
+.main nav {
+    max-width: 80vw;
+    justify-content: space-between;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    padding-top: 30px;
+    height: 62px;
+    /* position: relative;  */
+}
+
+.main nav span img {
+    height: 7vh;
+    min-width: 18vw;
+    background: transparent;
+    position: relative;
+    z-index: 10;
+}
+
+.main nav div button {
+    width: 80px;
+    height: 32px;
+    border-radius: 5px;
+    background-color: red;
+    color: white;
+    border: none;
+    font-family: sans-serif;
+    font-size: medium;
+    margin-right: 15px;
+    /* padding: auto; */
+    position: relative;
+    z-index: 10;
+}
+
+/* NAVBAR ENDED */
+
+/* TEXT PORTION STARTED */
+.main .Unlimited {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    height: 100vh;
+    word-spacing: 0px;
+    letter-spacing: 0px;
+    /* line-height: 0%; */
+    font-size: 27px;
+    justify-content: center;
+    align-items: center;
+    font-weight:100;
+    position: relative;
+    margin: 50px;
+}
+.main .Unlimited h1{
+    font-weight: 900;
+    font-family: sans-serif;
+}
+.main .Unlimited h4,h5{
+    font-family: sans-serif;
+    font-weight: lighter;
+
+}
+.main .Unlimited div{
+    display: flex;
+    justify-content: center;
+    width: 80vw;
+    gap: 10px;
+
+}
+.main .Unlimited div input{
+    padding:8px 0px 8px 12px;
+    height: 60px;
+    min-width: 28vw;
+    /* min-width: 30vw; */
+    font-size: medium;
+    border-radius: 5px;
+    background-color: transparent;
+    color: white;
+    position: relative;
+    z-index: 11;
+    border: 1px solid grey;
+    /* place-holder-color:white; */
+}
+.main .Unlimited div button{
+    padding: 10px;
+    height: 60px;
+    min-width: 14vw;
+    border-radius: 5px;
+    background-color: red;
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+    border: none;
+}
+
+.main nav div button:hover, .main .Unlimited div button:hover{
+    background-color: rgb(187, 9, 9);
+
+}
+/* TEXT PORTION ENDED */
+
+hr{
+    height: 10px;
+    border: none;
+    background-color: grey;
+}
+
+/* TEXT ENJOY ON TV PORTION STARTED */
+.tv{
+    display: flex;
+    background-color: rgb(0, 0, 0);
+    justify-content: space-around;
+    height: 100vh;
+    gap: 0px;
+    padding: 0px;
+
+}
+.tv .firsttv {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    max-width: 35vw;
+    margin: 30px;
+    margin-bottom: 160px;
+    /* align-items: center; */
+    color: white; 
+}
+.tv .firsttv h1{
+    font-family: sans-serif;
+    font-size: 3.2em;
+    font-weight: 900;
+
+    /* width: 400px; */
+
+
+}
+.tv .firsttv h2{
+    font-family: sans-serif;
+    font-weight: 500;
+    max-width: 90%; 
+    font-size: 1.8em; /* Use relative units */
+}
+.tv .image img{
+    margin: 10px 80px 0px 0px;
+    height: 400px;
+}
+.image {
+    position: relative;
+    max-width: 400px; /* Set your desired width */
+    max-height: 300px; /* Set your desired height */
+    /* margin-right: 160px; */
+    margin-top: 60px;
+    height: auto; /* Maintain aspect ratio */
+    margin-right: 150px;
+}
+
+.background-video {
+    margin-top:94px;
+    margin-left: 71px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 97%;
+    object-fit: cover;
+    height: 73%;
+    z-index: 1;
+}
+.foreground-image{
+    position: relative;
+    z-index: 2;
+}
+/* TEXT ENJOY ON TV PORTION ENDED */
+
+
+/* GIRL WITH MOBILE PORTION STARTED */
+
+.topgirl{
+    display: flex;
+    justify-content: space-around;
+    background-color: black;
+    height: 102vh;
+    gap: 0px;
+
+}
+.topgirl .girl-image img{
+    margin: 85px 50px 0px 0px;
+    height: 400px;
+    width: 500px;
+}
+
+.topgirl .girl-text{
+    display: flex;
+    color: white;
+    justify-content: flex-end;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    max-height: 350px;  
+    margin-right: 160px;
+    margin-top: 65px;
+}
+.topgirl .girl-text h1{
+    font-family: sans-serif;
+    min-width: 40vw;
+    font-size: 50px;
+    font-weight: 900;
+    /* width: 400px; */
+}
+.topgirl .girl-text h2{
+    min-width: 52vw;
+    font-family: sans-serif;
+    font-weight: 500;
+    /* width: 400px; */
+}
+
+/* GIRL WITH MOBILE PORTION STARTED */
+/* 2 texts PORTION STARTED */
+.two-texts{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color: black;
+    height: 64vh;
+    width: 100vw;
+}
+.two-texts div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 60%;
+    height: 80%;
+}
+.two-texts div h1{
+        font-family: sans-serif;
+        max-width: 30vw;
+        font-size: 50px;
+        font-weight: 900;
+        /* width: 400px; */
+    }
+.two-texts div h3{
+    max-width: 30vw;
+    font-weight: 400;
+    font-size: 25px;
+    /* width: 400px; */
+}
+
+/* 2 texts PORTION ENDED */
+
+/*Kids Section Started*/
+
+
+.kids{
+     display: flex;
+    justify-content: space-around;
+    background-color: black;
+    height: 95vh;
+    gap: 0px;
+
+
+}
+.kids .kids-image img{
+    margin: 85px 50px 0px 0px;
+    height: 400px;
+    width: 500px;
+}
+.kids .kids-text{
+    display: flex;
+    color: white;
+    justify-content: flex-end;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    max-height: 350px;  
+    margin-right: 160px;
+    margin-top: 65px;
+}
+.kids .kids-text h1{
+    font-family: sans-serif;
+    /* min-width: 40vw; */
+    max-width: 40vw;
+    font-size: 50px;
+    font-weight: 900;
+}
+.kids .kids-text h2{
+    /* min-width: 52vw; */
+    max-width: 40vw;
+    font-family: sans-serif;
+    font-weight: 500;
+    /* width: 400px; */
+}
+
+/*Kids Section Ended  */
+/* Last portion started */
+.last{
+    display: flex;
+    background-color: black;
+    height: 155vh;
+    align-items: center;
+    justify-content: center;
+}
+.last .last-part{
+    width: 90%;
+    margin-top: 100px;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.last .last-part button{
+    background-color: rgb(48, 46, 46);
+    height: 13vh;
+    color: white;
+    width: 83%;
+    border: none;
+    font-size: 25px;
+    text-align: left;
+    padding: 30px 0px 30px 30px;
+}
+.last .last-part div{
+    display: flex;
+    justify-content: center;
+    width: 80vw;
+    gap: 10px;
+
+}
+.last .last-part div input{
+    padding:8px 0px 8px 12px;
+    height: 60px;
+    min-width: 28vw;
+    /* min-width: 30vw; */
+    font-size: medium;
+    border-radius: 5px;
+    background-color: transparent;
+    color: white;
+    position: relative;
+    z-index: 11;
+    border: 1px solid grey;
+    /* place-holder-color:white; */
+}
+.last .last-part div button{
+    padding: 10px;
+    height: 60px;
+    width: 17vw;
+    text-align: center;
+    /* min-width: 14vw; */
+    border-radius: 5px;
+    background-color: red;
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+    border: none;
+}
+.last .last-part h3{
+    font-size: 22px;
+    /* max-width: 80vw; */
+    text-align: center;
+    font-weight: lighter;
+}
+.last .last-part h1{
+    font-size: 48px;
+    text-align: center;
+    font-weight: 900;
+}
+.least{
+    height: 105vh;
+    background-color: black;
+    color: white;
+    overflow-x: hidden;
+    overflow-y: hidden;
+
+}
+
+.least div{
+    display: flex;
+    flex-direction: column;
+    height: 105vh; 
+    background-color: black;
+
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.least div .first{
+    /* justify-content: space-around; */
+    margin-top: 80px;
+    display: flex;
+    /* gap: 60px; */
+    flex-direction: row;
+}
+.least div .second{
+    display: flex;
+    margin-top: 80px;
+    /* justify-content: space-around; */
+    flex-direction: row;
+    /* gap: 60px; */
+
+}
+
+
+/* Last portion Ended */
+
+
+/* Media Queries */
+@media (max-width: 960px) {
+    
+    .main nav span img {
+        min-width: 10vw;
+        height: 27px;
+    }
+    .main .Unlimited {
+        height: 80vh;
+    }
+    .main .Unlimited h1{
+        font-size: 30px;
+    }
+    .main .Unlimited h4{
+        font-size: 20px;
+    }
+    .main .Unlimited h5{
+        font-size: 17px;
+    }
+    .topgirl .girl-image img{
+        max-height: 55vh;
+        max-width: 55vw;
+
+
+    }
+    
+    
+   
+}
+@media (max-width: 1060px) {
+    .tv{
+        flex-direction: column;    
+        height: auto; /* Adjust height as needed */
+        align-items: center;
+        padding: 40px 20px; 
+    }
+    .tv .image{
+        margin-bottom: 50vh;
+        /* margin-left: 21%; */
+        margin-top: 60px;
+     
+    }
+    .tv .firsttv{
+        display: flex;
+        justify-content: center;
+        max-width: 100%;
+        align-items: center;
+    }
+    .tv .firsttv h2{
+        font-size: 1.2em;
+        max-width: 100%;
+        text-align: center;
+    }
+    .tv .firsttv h1{
+        font-size: 32px;
+        margin: 0;
+        padding: 0;
+        /* min-width: 800px; */
+    }
+    .topgirl{
+        display: flex;
+        flex-direction: column-reverse;
+        height: 130vh;
+    }
+    
+    .topgirl .girl-image{
+        align-self: center;
+    }
+    .topgirl .girl-image img{
+        margin: 0px;
+    }
+    .topgirl .girl-text{
+        /* align-self: center; */
+        align-items: center;
+        justify-content: center;
+        margin-right: 40px;
+        padding-left: 40px;
+        /* padding-right: 40px; */
+    }
+    .topgirl .girl-text h1{
+        text-align: center;
+        max-width: 700px;
+        font-size: 30px;
+    }
+    .topgirl .girl-text h2{
+        max-width: 700px;
+        font-size: large;
+    }
+    .two-texts div{
+        align-items: center;
+        justify-content: center;
+        margin-right: 40px;
+        padding-left: 40px;
+        width: 90%
+    }
+    .two-texts div h1{
+        text-align: center;
+        max-width: 700px;
+        font-size: 30px;
+    }
+    .two-texts div h3{
+        text-align: center;
+        max-width: 700px;
+        font-size: large;
+    }
+    .kids{
+        display: flex;
+        flex-direction: column-reverse;
+        height: 150vh;
+    }
+    
+    .kids .kids-image{
+        align-self: center;
+    }
+    .kids .girl-image img{
+        margin: 0px;
+    }
+    .kids .kids-text{
+        /* align-self: center; */
+        align-items: center;
+        justify-content: center;
+        margin-right: 40px;
+        padding-left: 40px;
+        /* padding-right: 40px; */
+    }
+    .kids .kids-text h1{
+        text-align: center;
+        max-width: 700px;
+        font-size: 30px;
+    }
+    .kids .kids-text h2{
+        text-align: center;
+        max-width: 700px;
+        font-size: large;
+    }
+    .kids .kids-image img{
+        margin: 85px 0px 0px 0px;
+    }
+    .last{
+        height: 200vh;
+    }
+    .last .last-part button{
+        font-size: 15px;
+        padding: 0px 0px 0px 10px;
+    }
+    .last .last-part h3{
+        font-size: 15px;
+    }
+    .last .last-part h1{
+        font-size: 30px;
+    }
+    .last .last-part div button{
+        width: 17vw;
+        font-size: 18px;
+
+    }
+
+}
+
+
+@media (max-width: 240px) {
+    .main nav {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        align-items: flex-start;
+        margin-left: 25px;
+    }
+    .main nav div button {
+        margin-right: 0px;
+        margin-left: 4px;
+    }
+    .main .Unlimited {
+        font-size: 19px;
+        height: 105vh;
+    }
+    .main{
+        height: 130vh;
+    }
+    .Unlimited div button{
+        font-size: 10px;
+       
+    }
+}
+
+
+@media (max-width: 1264px) {
+    .main nav {
+        max-width: 96vw;
+    }
+    .main .box {
+        height: 100%;
+    }
+    .image {
+        margin-right: 100px;
+        margin-bottom: 200px;
+    }
+    .tv{
+        flex-direction: column;    
+        height: auto; /* Adjust height as needed */
+        align-items: center;
+        /* padding: 40px 20px; Adjust padding for smaller screens */
+    }
+    .tv .firsttv{
+        margin-bottom: 0px;
+        max-width: 100%;
+        /* justify-content: center; */
+        align-items: center;
+    }
+    .tv .firsttv h2{
+        max-width: 80%; 
+    }
+
+
+
+}
+@media (max-width: 378px) {
+    .main nav span img {
+        margin-left: 10px;
+    }
+    .main .box {
+        height: 100%;
+    }
+    .main{
+        height: 130vh;
+    }
+    .main .Unlimited {
+        height: 100vh;
+    }
+    .topgirl{
+        height: 150vh;
+    }
+    .kids{
+        height: 165vh;
+    }
+
+
+}
+@media (max-width: 288px) {
+    .main .Unlimited {
+        height: 120vh;
+    }
+    .main{
+        height: 144vh;
+    }
+    .main .Unlimited div button{
+        font-size: 20px;
+       
+    }
+
+
+}
+@media (max-width: 750px) {
+    .main .Unlimited div {
+        display: flex;
+        flex-direction: column;
+    }
+    .tv .image {
+        margin-top: 20px;
+
+    }
+    .main .Unlimited div button{
+    /* max-width: 26vw; */
+    min-width: 20vw;
+    height: 50px;
+    align-self: center;
+}
+    .last .last-part div{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 80vw;
+        gap: 10px;
+}
+    .last .last-part div button{
+        font-size: 16px;
+        align-self: center;
+        width: 49vw;
+}
+    .last .last-part div input{
+        align-self: center;
+        width: 49vw;
+}
+.least div{
+    flex-direction: column;
+    flex-wrap: nowrap;
+
+}
+.least div .first{
+    flex-direction: row;
+}
+.least div .second{
+    flex-direction: row;
+ 
+
+}
+}
+
